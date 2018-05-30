@@ -1,6 +1,6 @@
 # _copyfileftp
 
-## Etapas para criação de um webjob no Azure a partir de uma console application com c#
+## Etapas para criação de um WebJob no Azure a partir de uma Console Application com C#
 1.	Crie um novo recurso web no Azure, informando o nome do app, a inscrição e o grupo de recurso.
 2.	Crie um arquivo .bat contendo o seguinte conteúdo, “ECHO OFF dotnet WebJobCopyFileFtp.dll %1”, onde “WebJobCopyFileFtp.dll” é a dll principal do projeto e “%1” informa ao webjob do Azure que ele aceite uma entrada, pois o webjob do Azure não pode executar o método MAIN da dll, ele precisa do ponto de entrada.
 3.	Compacte os arquivos compilados (dll, pdb, ...) após ser executado o build da aplicação junto ao arquivo .bat criado.
